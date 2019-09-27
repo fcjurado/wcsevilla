@@ -1,0 +1,40 @@
+# Global parameter defaults
+path: /var/www/html/macarena
+url: http://localhost:8080/macarena
+user: macarena
+color: true
+debug: false
+disabled_commands:
+  - db drop
+
+config create:
+    dbuser: fcjurado
+    dbpass: mysql
+
+core download:
+    locale: es_ES
+
+config create:
+    dbname: macarena
+    dbuser: fcjurado
+    dbpass: mysql
+
+core install:
+    title: Macarena
+    admin_user: macarena
+    admin_password: macarena
+    admin_email: macarena@fcjurado.com
+
+theme install:
+    activate: true
+
+scaffold child-theme:
+    parent_theme: fury
+    theme_name: macarena-theme
+    author: Macarena
+    author_uri: macarena.com 
+    theme_uri: macarena-theme.com
+    slug: fury-child
+    activate: true
+    enable-network: true
+    force: true
