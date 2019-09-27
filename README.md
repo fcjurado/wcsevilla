@@ -11,10 +11,12 @@
 Durante este taller vamos a varios sitios basados en WordPress y cómo podemos actualizarlos desde el mismo equipo con la misma terminal y desde el mismo equipo.
 
 1. Vamos a crear 4 sites usando los comandos en un script SH y tomando los datos desde ficheros YML
+
 Esto nos puede servir para, por ejemplo, tener ficheros de configuración para cada vez que montemos un nuevo proyecto, alguien se incorpore en el equipo, etc.
 
 2. Luego vamos a actualizarlos en remoto y hacer chequeo de rendimiento y vulnerabilidades
-Aquí es donde está el ahorro del tiempo: puedes automatizar cualquier comando
+
+Aquí es donde está el ahorro del tiempo: puedes automatizar un número alto de sites con cualquier comando
 
 Para ello, necesitarías tener instalado un entorno LAMP o LEMP. Puedes tenerlo en local o en tu propio hosting. Debe tener al menos estos requisitos:
 
@@ -53,6 +55,7 @@ WP-CLI version: 2.1.0
 ### Lista de comandos
 
 https://developer.wordpress.org/cli/commands/
+
 https://make.wordpress.org/cli/handbook/config/
 
 ### Tipología de un comando:
