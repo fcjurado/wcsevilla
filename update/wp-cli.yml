@@ -1,0 +1,34 @@
+debug: false
+
+@bellavista:
+  ssh: fcjurado@cofeeshop.com:/home/coffeeshop/corto.fcjurado.com
+  user: bellavista
+  path: /var/www/html/bellavista
+  http: http://localhost:8080/bellavista
+
+@macarena:
+  user: macarena
+  path: /var/www/html/macarena
+  http: http://localhost:8080/macarena
+
+@norte:
+  user: norte
+  path: /var/www/html/norte
+  http: http://localhost:8080/norte
+
+@triana:
+  user: triana
+  path: /var/www/html/triana
+  http: http://localhost:8080/triana
+
+@remote:
+  ssh: sevilla@brunswick.dreamhost.com
+  path: /home/wcsevilla/wcsevilla.fcjurado.com
+  http: https://wcsevilla.fcjurado.com
+
+@all:
+  - @bellavista
+  - @macarena
+  - @norte
+  - @triana
+  - @remote

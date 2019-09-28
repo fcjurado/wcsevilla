@@ -46,4 +46,24 @@ post generate:
     post_date: 2019-01-01
 
 comment generate: 
-    count: 10 
+    count: 5 
+
+language plugin update:
+    all: true
+
+language theme update:
+    all: true
+
+search-replace:
+    verbose: true
+
+media regenerate:
+    yes: true
+
+transient delete:
+    expired: true
+
+profile stage:
+     all: true
+     spotlight: true
+     allow-root: true

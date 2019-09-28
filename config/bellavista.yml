@@ -20,7 +20,7 @@ config create:
     dbpass: mysql
 
 core install:
-    title: bellavista
+    title: Bellavista
     admin_user: bellavista
     admin_password: bellavista
     admin_email: bellavista@fcjurado.com
@@ -46,4 +46,24 @@ post generate:
     post_date: 2019-01-01
 
 comment generate: 
-    count: 10 
+    count: 20 
+
+language plugin update:
+    all: true
+
+language theme update:
+    all: true
+
+search-replace:
+    verbose: true
+
+media regenerate:
+    yes: true
+
+transient delete:
+    expired: true
+
+profile stage:
+     all: true
+     spotlight: true
+     allow-root: true

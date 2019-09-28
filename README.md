@@ -14,7 +14,7 @@ Durante este taller vamos a varios sitios basados en WordPress y cómo podemos a
 
 Esto nos puede servir para, por ejemplo, tener ficheros de configuración para cada vez que montemos un nuevo proyecto, alguien se incorpore en el equipo, etc.
 
-2. Luego vamos a actualizarlos en remoto y hacer chequeo de rendimiento y vulnerabilidades
+2. Luego vamos a actualizarlos, backup, chequeo wp-sec, etc. usando aliases
 
 Aquí es donde está el ahorro del tiempo: puedes automatizar un número alto de sites con cualquier comando
 
@@ -38,7 +38,7 @@ $ wp --info
 Si está instalado, ``` wp --info ``` mostrará una salida así:
 
 ```
-OS:     Linux 4.4.0-17134-Microsoft #706-Microsoft Mon Apr 01 18:13:00 PST 2019 x86_64
+OS:     Linux 4.4.0-17763-Microsoft #379-Microsoft Wed Mar 06 19:16:00 PST 2019 x86_64
 Shell:  /bin/bash
 PHP binary:     /usr/bin/php7.2
 PHP version:    7.2.12-1+0~20181112102304.11+stretch~1.gbp55f215
@@ -49,7 +49,7 @@ WP_CLI phar path:       /home/fcjurado
 WP-CLI packages dir:    /home/fcjurado/.wp-cli/packages/
 WP-CLI global config:
 WP-CLI project config:
-WP-CLI version: 2.1.0
+WP-CLI version: 2.3.0
 ```
 
 ### Lista de comandos
@@ -84,10 +84,14 @@ Para hostings: dar de alta dominios o subdominios en su panel correspondiente
 3. Revisar los scripts del fichero [install.sh](install.sh)
 4. Ejecutar el fichero [install.sh](install.sh)
 
+No uso aliases porque la configuración por comando no se personaliza por alias:
+
+```bash
+Aliases to other WordPress installs (e.g. `wp @staging rewrite flush`)
+An alias can include 'user', 'url', 'path', 'ssh', or 'http'
+```
 
 #### 2. Actualización y chequeo
-
-Ejemplo: El equipo de SEO nos dice que no se dice "mi arma", sino "my weapon"
 
 1. Revisar los scripts del fichero [update.sh](update.sh)
 2. Ejecutar el fichero [update.sh](update.sh)
@@ -95,7 +99,6 @@ Ejemplo: El equipo de SEO nos dice que no se dice "mi arma", sino "my weapon"
 ### Algunos paquetes necesarios
 
 ```
-$ wp package install 10up/wp-vulnerability-scanner
 $ wp package install markri/wp-sec
 $ wp package install wp-cli/profile-command
 ```

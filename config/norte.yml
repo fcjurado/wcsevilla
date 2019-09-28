@@ -20,7 +20,7 @@ config create:
     dbpass: mysql
 
 core install:
-    title: norte
+    title: Norte
     admin_user: norte
     admin_password: norte
     admin_email: norte@fcjurado.com
@@ -47,3 +47,23 @@ post generate:
 
 comment generate: 
     count: 10 
+
+language plugin update:
+    all: true
+
+language theme update:
+    all: true
+
+search-replace:
+    verbose: true
+
+media regenerate:
+    yes: true
+
+transient delete:
+    expired: true
+
+profile stage:
+     all: true
+     spotlight: true
+     allow-root: true
