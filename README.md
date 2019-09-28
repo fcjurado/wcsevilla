@@ -3,12 +3,12 @@
 ## WordCamp Sevilla 2019
 
 ### Slides
-* https://docs.google.com/presentation/d/122HofJDY8P6naQ4m3cBHcEXwGENN8h3xe5C9wNEvmQU/edit?usp=sharing
+* https://docs.google.com/presentation/d/122HofJDY8P6naQ4m3cBHcEXwGENN8h3xe5C9wNEvmQU
 
 * Repositorio: https://github.com/fcjurado/wcsevilla
 
 ### Aperitivo formativo
-Durante este taller vamos a varios sitios basados en WordPress y cómo podemos actualizarlos desde el mismo equipo con la misma terminal y desde el mismo equipo.
+Durante este taller vamos a varios sitios basados en WordPress y cómo podemos actualizarlos desde el mismo equipo desde el mismo equipo.
 
 1. Vamos a crear 4 sites usando los comandos en un script SH y tomando los datos desde ficheros YML
 
@@ -21,7 +21,7 @@ Aquí es donde está el ahorro del tiempo: puedes automatizar un número alto de
 Para ello, necesitarías tener instalado un entorno LAMP o LEMP. Puedes tenerlo en local o en tu propio hosting. Debe tener al menos estos requisitos:
 
 * Entorno Mac/linux, Consola Cygwin (Windows), WSL (Windows)
-* PHP 7.1
+* PHP >= 7.1
 * WordPress >= 4/5
 * Tener instalado WP-CLI. Si tienes un hosting, es posible que ya lo tengas instalado (Siteground lo tiene)
 
@@ -76,6 +76,21 @@ $ wp <command> <subcommand> --<option-with-value>=<option-value> --<option-witho
 ```
 
 Para hostings: dar de alta dominios o subdominios en su panel correspondiente
+
+#### 1. Instalación de sitios
+
+1. Configurar los ficheros YML de la carpeta /config
+2. Configurar los ficheros JSON de la carpeta /config
+3. Revisar los scripts del fichero [install.sh](install.sh)
+4. Ejecutar el fichero [install.sh](install.sh)
+
+
+#### 2. Actualización y chequeo
+
+Ejemplo: El equipo de SEO nos dice que no se dice "mi arma", sino "my weapon"
+
+1. Revisar los scripts del fichero [update.sh](update.sh)
+2. Ejecutar el fichero [update.sh](update.sh)
 
 ### Algunos paquetes necesarios
 

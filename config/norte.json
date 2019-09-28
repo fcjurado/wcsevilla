@@ -1,0 +1,6 @@
+{
+    "theme": "hestia",
+    "child_theme": "hestia-child",
+    "plugins": "broken-link-checker social-icons cornify-for-wordpress hello-darth",
+    "lang": "es"
+}

@@ -1,7 +1,7 @@
 # Global parameter defaults
-path: /var/www/html/macarena
-url: http://localhost:8080/macarena
-user: macarena
+path: /var/www/html/norte
+url: http://localhost:8080/norte
+user: norte
 color: true
 debug: false
 disabled_commands:
@@ -15,22 +15,22 @@ core download:
     locale: es_ES
 
 config create:
-    dbname: macarena
+    dbname: norte
     dbuser: fcjurado
     dbpass: mysql
 
 core install:
-    title: Macarena
-    admin_user: macarena
-    admin_password: macarena
-    admin_email: macarena@fcjurado.com
+    title: norte
+    admin_user: norte
+    admin_password: norte
+    admin_email: norte@fcjurado.com
 
 scaffold child-theme:
-    parent_theme: lyrical
-    theme_name: lyrical-child
-    author: Macarena
-    author_uri: macarena.com 
-    theme_uri: macarena-theme.com
+    parent_theme: hestia
+    theme_name: hestia-child
+    author: norte
+    author_uri: norte.com 
+    theme_uri: norte-theme.com
     activate: true
     enable-network: true
     force: true

@@ -1,5 +1,6 @@
 {
-    "theme": "fury",
+    "theme": "lyrical",
+    "child_theme": "lyrical-child",
     "plugins": "contact-form-7 jetpack",
-    "languages": "es en fi"
+    "lang": "es"
 }

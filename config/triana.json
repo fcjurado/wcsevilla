@@ -1,0 +1,6 @@
+{
+    "theme": "astra",
+    "child_theme": "astra-child",
+    "plugins": "wordpress-seo w3-total-cache wp-smushit",
+    "lang": "en"
+}

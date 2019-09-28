@@ -1,7 +1,7 @@
 # Global parameter defaults
-path: /var/www/html/macarena
-url: http://localhost:8080/macarena
-user: macarena
+path: /var/www/html/bellavista
+url: http://localhost:8080/bellavista
+user: bellavista
 color: true
 debug: false
 disabled_commands:
@@ -15,22 +15,22 @@ core download:
     locale: es_ES
 
 config create:
-    dbname: macarena
+    dbname: bellavista
     dbuser: fcjurado
     dbpass: mysql
 
 core install:
-    title: Macarena
-    admin_user: macarena
-    admin_password: macarena
-    admin_email: macarena@fcjurado.com
+    title: bellavista
+    admin_user: bellavista
+    admin_password: bellavista
+    admin_email: bellavista@fcjurado.com
 
 scaffold child-theme:
-    parent_theme: lyrical
-    theme_name: lyrical-child
-    author: Macarena
-    author_uri: macarena.com 
-    theme_uri: macarena-theme.com
+    parent_theme: zakra
+    theme_name: zakra-child
+    author: bellavista
+    author_uri: bellavista.com 
+    theme_uri: bellavista-theme.com
     activate: true
     enable-network: true
     force: true

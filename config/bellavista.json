@@ -1,0 +1,6 @@
+{
+    "theme": "zakra",
+    "child_theme": "zakra-child",
+    "plugins": "google-analytics-for-wordpress all-in-one-schemaorg-rich-snippets bj-lazy-load",
+    "lang": "en"
+}

@@ -1,7 +1,7 @@
 # Global parameter defaults
-path: /var/www/html/macarena
-url: http://localhost:8080/macarena
-user: macarena
+path: /var/www/html/triana
+url: http://localhost:8080/triana
+user: triana
 color: true
 debug: false
 disabled_commands:
@@ -15,22 +15,22 @@ core download:
     locale: es_ES
 
 config create:
-    dbname: macarena
+    dbname: triana
     dbuser: fcjurado
     dbpass: mysql
 
 core install:
-    title: Macarena
-    admin_user: macarena
-    admin_password: macarena
-    admin_email: macarena@fcjurado.com
+    title: triana
+    admin_user: triana
+    admin_password: triana
+    admin_email: triana@fcjurado.com
 
 scaffold child-theme:
-    parent_theme: lyrical
-    theme_name: lyrical-child
-    author: Macarena
-    author_uri: macarena.com 
-    theme_uri: macarena-theme.com
+    parent_theme: astra
+    theme_name: astra-child
+    author: triana
+    author_uri: triana.com 
+    theme_uri: triana-theme.com
     activate: true
     enable-network: true
     force: true
