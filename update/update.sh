@@ -45,5 +45,3 @@ wp @all db repair
 
 echo "Modo mantenimiento OFF"
 wp @all maintenance-mode deactivate
-
-done

@@ -1,7 +1,26 @@
 debug: false
 
+language plugin update:
+    all: true
+
+language theme update:
+    all: true
+
+search-replace:
+    verbose: true
+
+media regenerate:
+    yes: true
+
+transient delete:
+    expired: true
+
+profile stage:
+     all: true
+     spotlight: true
+     allow-root: true
+
 @bellavista:
-  ssh: fcjurado@cofeeshop.com:/home/coffeeshop/corto.fcjurado.com
   user: bellavista
   path: /var/www/html/bellavista
   http: http://localhost:8080/bellavista
@@ -22,8 +41,8 @@ debug: false
   http: http://localhost:8080/triana
 
 @remote:
-  ssh: sevilla@brunswick.dreamhost.com
-  path: /home/wcsevilla/wcsevilla.fcjurado.com
+  ssh: wcsevilla@brunswick.dreamhost.com
+  path: /home/wcsevilla.fcjurado.com
   http: https://wcsevilla.fcjurado.com
 
 @all:
