@@ -1,8 +1,8 @@
 #!/bin/bash
 
 echo "Instalando paquetes necesarios de WP-CLI"
-wp @all package install markri/wp-sec
-wp @all package install wp-cli/profile-command
+wp package install markri/wp-sec
+wp package install wp-cli/profile-command
 
 echo "Modo mantenimiento ON"
 wp @all maintenance-mode activate
