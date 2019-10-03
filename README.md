@@ -72,7 +72,7 @@ $ wp <command> <subcommand> --<option-with-value>=<option-value> --<option-witho
 ### Editar fichero hosts
 
 ```
-127.0.0.1 macarena.local norte.local triana.local los-remedios.local bellavista.local nervion.local cerro-amate.local sur.local
+127.0.0.1 macarena.local norte.local triana.local bellavista.local
 ```
 
 Para hostings: dar de alta dominios o subdominios en su panel correspondiente
